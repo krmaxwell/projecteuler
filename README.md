@@ -1,1 +1,1 @@
-My code for working through Project Euler
+My code for working through [Project Euler](https://projecteuler.net/).
