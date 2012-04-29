@@ -8,4 +8,5 @@ My code for working through [Project Euler](https://projecteuler.net/).
 * **Problem 6:** COMPLETE
 * **Problem 7:** COMPLETE
 * **Problem 8:** COMPLETE
+* **Problem 9:** COMPLETE
 
