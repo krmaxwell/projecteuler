@@ -1,4 +1,5 @@
 # Frequently-used routines for Project Euler
+from math import *
 
 def prime_factors(n):
     """ Return the prime factors of the given number. """
@@ -49,3 +50,27 @@ def square_sum(n):
     for i in range(1,n+1):
 	sum += i
     return sum**2
+
+def is_prime(n):
+    r = trunc(sqrt(n))			# max number we have to check
+    i = 2				# first number to check
+    p = True				# eventual return value
+
+    while (i <= r) and p:
+	if (n % i) == 0:
+	    p = False
+	else:
+	    i += 1
+    return p
+
+def prime_n(n):
+    candidate=2
+    num = 1
+
+    while num < n+1:
+	if is_prime(candidate):
+	    num += 1
+	    candidate += 1
+	else:
+	    candidate += 1
+    return candidate-1
