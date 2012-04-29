@@ -5,7 +5,7 @@ import sys
 n=0
 a=1
 b=2
-print "Calcuating sum..."
+print "Calculating sum..."
 while (b <= 4000000):
 	print "a=",a," b=",b
 	if (b % 2) == 0:
