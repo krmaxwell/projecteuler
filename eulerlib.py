@@ -53,14 +53,14 @@ def square_sum(n):
 
 def is_prime(n):
     r = trunc(sqrt(n))			# max number we have to check
-    i = 2				# first number to check
+    i = 3				# first number to check
     p = True				# eventual return value
 
     while (i <= r) and p:
 	if (n % i) == 0:
 	    p = False
 	else:
-	    i += 1
+	    i += 2			# skip even numbers
     return p
 
 def prime_n(n):
