@@ -18,3 +18,7 @@ def prime_factors(n):
 
     return factors
 
+def is_palindrome(n):
+    """ Return a value indicating whether a number is a palindrome."""
+    strn=str(n)
+    return (strn == strn[::-1])
