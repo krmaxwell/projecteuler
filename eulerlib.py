@@ -37,3 +37,15 @@ def print_factors(factors):
 			print factors[n],
 		first = False
 	print
+
+def sum_squares(n):
+    sum=0
+    for i in range(1,n+1):
+	sum += i**2
+    return sum
+
+def square_sum(n):
+    sum=0
+    for i in range(1,n+1):
+	sum += i
+    return sum**2
