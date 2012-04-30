@@ -76,8 +76,12 @@ def prime_n(n):
     return candidate-1
 
 def count_divisors(n):
-    divs=1
-    for i in range(1,int(sqrt(n))):
+    divs = 0
+    r = sqrt(n)
+    for i in range(1,int(r)):
 	if (n % i == 0):
 	    divs += 1
-    return divs
+    divs = divs * 2
+    if r.is_integer():
+        divs -= 1
+    return divs 
