@@ -2,6 +2,7 @@
 
 from array import *
 
+myprod=0
 myarray=[]
 # load data from problem
 myarray.append([8,02,22,97,38,15,00,40,00,75,04,05,07,78,52,12,50,77,91,8])
@@ -25,4 +26,36 @@ myarray.append([20,69,36,41,72,30,23,88,34,62,99,69,82,67,59,85,74,04,36,16])
 myarray.append([20,73,35,29,78,31,90,01,74,31,49,71,48,86,81,16,23,57,05,54])
 myarray.append([01,70,54,71,83,51,54,69,16,92,33,48,61,43,52,01,89,19,67,48])
 
-print myarray[3][0]
+i=6
+j=8
+print "Test product is",myarray[i][j]*myarray[i+1][j+1]*myarray[i+2][j+2]*myarray[i+3][j+3]
+
+# first check down
+for i in range(0,16):
+    for j in range(0,19):
+	newprod = myarray[i][j]*myarray[i+1][j]*myarray[i+2][j]*myarray[i+3][j]
+	if newprod > myprod:
+	    myprod = newprod
+
+# then check across
+for i in range(0,19):
+    for j in range(0,16):
+	newprod = myarray[i][j]*myarray[i][j+1]*myarray[i][j+2]*myarray[i][j+3]
+	if newprod > myprod:
+	    myprod = newprod
+
+# then check NW-SE
+for i in range(0,16):
+    for j in range(0,16):
+	newprod = myarray[i][j]*myarray[i+1][j+1]*myarray[i+2][j+2]*myarray[i+3][j+3]
+	if newprod > myprod:
+	    myprod = newprod
+
+# then check NE-SW
+for i in range(3,19):
+    for j in range(3,19):
+	newprod = myarray[i][j]*myarray[i-1][j-1]*myarray[i-2][j-2]*myarray[i-3][j-3]
+	if newprod > myprod:
+	    myprod = newprod
+
+print "Maximum product is",myprod
