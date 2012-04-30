@@ -1,11 +1,13 @@
 My code for working through [Project Euler](https://projecteuler.net/).
 
-* **Problem 1:** COMPLETE
-* **Problem 2:** COMPLETE
-* **Problem 3:** COMPLETE
-* **Problem 4:** COMPLETE
-* **Problem 5:** COMPLETE
-* **Problem 6:** COMPLETE
-* **Problem 7:** COMPLETE
-* **Problem 8:** COMPLETE
-
+* **Problem 01:** COMPLETE
+* **Problem 02:** COMPLETE
+* **Problem 03:** COMPLETE
+* **Problem 04:** COMPLETE
+* **Problem 05:** COMPLETE
+* **Problem 06:** COMPLETE
+* **Problem 07:** COMPLETE
+* **Problem 08:** COMPLETE
+* **Problem 09:** COMPLETE
+* **Problem 10:** COMPLETE
+* **Problem 11:** in progress
