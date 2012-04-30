@@ -35,6 +35,7 @@ for i in range(0,16):
     for j in range(0,19):
 	newprod = myarray[i][j]*myarray[i+1][j]*myarray[i+2][j]*myarray[i+3][j]
 	if newprod > myprod:
+	    print "New max down from",i,j
 	    myprod = newprod
 
 # then check across
@@ -42,6 +43,7 @@ for i in range(0,19):
     for j in range(0,16):
 	newprod = myarray[i][j]*myarray[i][j+1]*myarray[i][j+2]*myarray[i][j+3]
 	if newprod > myprod:
+	    print "New max across from",i,j
 	    myprod = newprod
 
 # then check NW-SE
@@ -49,13 +51,15 @@ for i in range(0,16):
     for j in range(0,16):
 	newprod = myarray[i][j]*myarray[i+1][j+1]*myarray[i+2][j+2]*myarray[i+3][j+3]
 	if newprod > myprod:
+	    print "New max SE from",i,j
 	    myprod = newprod
 
 # then check NE-SW
-for i in range(3,19):
+for i in range(0,16):
     for j in range(3,19):
-	newprod = myarray[i][j]*myarray[i-1][j-1]*myarray[i-2][j-2]*myarray[i-3][j-3]
+	newprod = myarray[i][j]*myarray[i+1][j-1]*myarray[i+2][j-2]*myarray[i+3][j-3]
 	if newprod > myprod:
+	    print "New max SW from",i,j
 	    myprod = newprod
 
 print "Maximum product is",myprod
