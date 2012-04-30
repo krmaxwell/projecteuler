@@ -85,3 +85,16 @@ def count_divisors(n):
     if r.is_integer():
         divs -= 1
     return divs 
+
+def collatz_chain(n):
+    i = 1
+
+    #print n
+    while n != 1:
+	if ((n >> 1) << 1) == n:
+	    n = n/2
+	else:
+	    n = 3*n +1
+	#print n
+	i += 1
+    return i
