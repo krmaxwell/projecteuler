@@ -2,15 +2,12 @@
 
 from eulerlib import *
 
-i = 0
-numdivs = 0
+i = 2
 trinum = 1
-while numdivs < 5:
+divs=1
+while divs <= 5:
     trinum = trinum+i
-    print "Checking",i,"th triangle number ",trinum
-    divs = list_divisors(trinum)
-    numdivs = len(divs)
+    divs = count_divisors(trinum)
+    print i,"th triangle number",trinum,"has",divs,"divisors."
     i += 1
 
-print "Triangle number",trinum,"has",numdivs,"divisors:"
-print divs

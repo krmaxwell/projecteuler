@@ -75,9 +75,9 @@ def prime_n(n):
 	    candidate += 1
     return candidate-1
 
-def list_divisors(n):
-    divs=[]
-    for i in range(1,n+1):
+def count_divisors(n):
+    divs=1
+    for i in range(1,int(sqrt(n))):
 	if (n % i == 0):
-	    divs.append(i)
+	    divs += 1
     return divs
