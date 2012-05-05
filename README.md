@@ -14,3 +14,5 @@ My code for working through [Project Euler](https://projecteuler.net/).
 * **Problem 12:** COMPLETE
 * **Problem 13:** COMPLETE
 * **Problem 14:** COMPLETE
+* **Problem 15:** In progress
+* **Problem 16:** In progress
