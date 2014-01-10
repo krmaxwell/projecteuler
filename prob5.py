@@ -7,7 +7,7 @@ from eulerlib import *
 if len(sys.argv) == 1:
     n = 10
 else:
-    n = sys.argv[1]
+    n = int(sys.argv[1])
 
 lcm = 1
 factors = {}
