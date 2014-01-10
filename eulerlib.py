@@ -30,16 +30,17 @@ def is_palindrome(n):
 
 
 def print_factors(factors):
+    factor_str = ""
     first = True
     for n in factors:
         if not first:
-            print "*",
-        print n,
+            factor_str += "*"
+        factor_str += str(n)
         if factors[n] != 1:
-            print "^",
-            print factors[n],
+            factor_str += "^"
+            factor_str += str(factors[n])
         first = False
-    print
+    return factor_str
 
 
 def sum_squares(n):
