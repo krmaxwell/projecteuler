@@ -9,8 +9,8 @@ if len(sys.argv) == 1:
 else:
     n = sys.argv[1]
 
-lcm=1
-factors={}
+lcm = 1
+factors = {}
 
 for i in range(n-1, 1, -1):
     candidate_factors = prime_factors(i)
@@ -22,4 +22,4 @@ for i in range(n-1, 1, -1):
 print "Factors of LCM are %s" % print_factors(factors)
 for f in factors:
     lcm = lcm * f ** factors[f]
-print "LCM is %d" %lcm
+print "LCM is %d" % lcm
