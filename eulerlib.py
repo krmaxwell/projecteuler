@@ -15,10 +15,10 @@ def prime_factors(n):
         c = 2
         while lastresult % c != 0:
             c += 1
-    if c in factors:
-        factors[c] += 1
-    else:
-        factors[c] = 1
+        if c in factors:
+            factors[c] += 1
+        else:
+            factors[c] = 1
         lastresult /= c
 
     return factors
