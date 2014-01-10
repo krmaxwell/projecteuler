@@ -1,5 +1,5 @@
 # Frequently-used routines for Project Euler
-from math import *
+from math import sqrt, trunc
 
 
 def prime_factors(n):
@@ -43,17 +43,17 @@ def print_factors(factors):
 
 
 def sum_squares(n):
-    sum = 0
+    total = 0
     for i in range(1, n+1):
-        sum += i**2
-    return sum
+        total += i**2
+    return total
 
 
 def square_sum(n):
-    sum = 0
+    total = 0
     for i in range(1, n+1):
-        sum += i
-    return sum**2
+        total += i
+    return total**2
 
 
 def is_prime(n):
@@ -86,9 +86,9 @@ def count_divisors(n):
     divs = 0
     r = sqrt(n)
     for i in range(1, int(r)):
-        if (n % i == 0):
+        if n % i == 0:
             divs += 1
-    divs = divs * 2
+    divs *= 2
     if r.is_integer():
         divs -= 1
     return divs
