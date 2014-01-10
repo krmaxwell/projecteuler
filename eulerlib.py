@@ -26,8 +26,7 @@ def prime_factors(n):
 
 def is_palindrome(n):
     """ Return a value indicating whether a number is a palindrome."""
-    strn = str(n)
-    return (strn == strn[::-1])
+    return (str(n) == str(n)[::-1])
 
 
 def print_factors(factors):
