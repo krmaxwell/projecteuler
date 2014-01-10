@@ -3,3 +3,6 @@
 
 # Temp files
 *.swp
+
+# IDE stuff
+.idea
