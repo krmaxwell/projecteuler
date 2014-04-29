@@ -6,3 +6,6 @@
 
 # IDE stuff
 .idea
+
+# virtual environment
+venv
