@@ -9,3 +9,5 @@
 
 # virtual environment
 venv
+
+.ipynb_checkpoints
